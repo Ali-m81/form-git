@@ -1,0 +1,459 @@
+@font-face {
+    font-family: ub-bold;
+    src: url(./fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+    font-family: ub-medium;
+    src: url(./fonts/Ubuntu-Medium.ttf);
+}
+@font-face {
+    font-family: ub-regular;
+    src: url(./fonts/Ubuntu-Regular.ttf);
+}
+span{
+    font-size: 14px;
+}
+h1{
+    font-size: 22px;
+    color: #072651;
+}
+p{
+    font-size: 14px;
+    color: #abacb1;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+}
+.facke{
+    border:solid 2px #846cdc ;
+    background : #e3def1;
+}
+body{
+    background-color: #eef5ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+
+}
+#main-sec,#summary-plan,#total,#main-sec,.summary-ons,.step,.ons{
+    display: flex;
+    flex-direction: row;
+}
+#left-sec,.right-art,.txt-step,#form-info,.select-plan div , .ons div , #main-summary,#summary-ons{
+    display: flex;
+    flex-direction: column;
+}
+#left-sec,.ons{
+    justify-content: center;
+    align-items: center;
+}
+
+button ,input,.go-back , .select-plan , .slider , .ons ,.step, #main-summary , #change-step{
+    cursor: pointer;
+}
+input::placeholder,.number ,.select-plan div span{
+    font-family:ub-regular; 
+}
+.number , #select-time, #confirm{
+    align-items: center;
+    justify-content: center;
+
+}
+#plan , #add-ons , #summary , .summary-ons , #span-mail , #span-name , #err-plan, #confirm{
+    display: none;
+}
+#main-sec{
+    background-color: #fff;
+    width: 49rem;
+    height: 37rem;
+    border-radius: 14px;
+    
+}
+#left-sec{
+    width: 17rem;
+    height: 35rem;
+    margin: 1rem;
+    background-image: url(./icons/bg-sidebar-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.right-art{
+    position: relative;
+    margin-left: 2rem !important;
+    width: 24rem;
+    height: 35rem;
+    margin: 1rem;
+    margin-top: 2rem;
+}
+#step{
+    margin-top: -12rem;
+}
+.step{
+    width: 14rem;
+    height: 2rem;
+    margin-bottom: 2rem;
+}
+.number{
+    border: none;
+    border-radius: 50%;
+    padding: .5rem;
+    margin-right: 1rem;
+    border: solid 1px #bde1fc;
+    display: flex;
+}
+.one-txt{
+    color: #8e8bfa;
+}
+.two-txt{
+    font-family:ub-regular ;
+    color: #fff;
+}
+
+input{
+    width: 22rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: solid .1px #abacb1;
+    margin-bottom: 1rem;
+}
+input::placeholder{
+    color:#a2a2aa ;
+    
+}
+label{
+    color: #072651;
+}
+button{
+    width: 6rem;
+    height: 2rem;
+    color: #fff;
+    background: #072651;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    right: -1rem;
+    bottom: 2rem;
+}
+.go-back{
+    color:#abacb1 ;
+    position: absolute;
+    left: -1rem;
+    bottom: 2.5rem;
+}
+.go-back:hover{
+    color:#072651 ;
+}
+#span-mail,#span-name,#err-plan{
+    width: 20rem;
+    margin-top: -.8rem;
+    margin-bottom: 1rem;
+    font-size: 13px;
+    color: red;
+    margin-left: 15rem;
+}
+#err-plan{
+    margin-left: 19rem;
+    margin-top: 0;
+}
+
+#plan{
+    margin-top: 1rem;
+}
+#select-plan{
+    display: flex;
+    width: 30rem;
+    margin-left: -1rem;
+}
+.select-plan{
+    margin: .5rem;
+    border: solid 1px #9590a8 ;
+    border-radius: 5px;
+   width: 8rem;
+   height: 9rem;
+
+}
+.select-plan:hover,.ons:hover{
+    border: 2px solid #846cdc;
+    background-color: #e3def1;
+}
+.select-plan div{
+    margin-left: .5rem;
+    
+}
+.select-plan div span{
+    color: #07295a;
+}
+.price{
+    font-size: 14px;
+    color: #a4a6ab !important;
+}
+.select-plan  img{
+    margin: .5rem;
+    margin-bottom: 2.5rem;
+    width:  2.7rem;
+}
+#select-time{
+    margin-top: 1rem;
+    width: 26rem;
+    height: 2.5rem;
+    background-color: #f8f9fe;
+    display: flex;
+    border-radius: 5px;
+}
+
+.switch {
+    margin: 0 .5rem;
+    position: relative;
+    display: inline-block;
+    width: 3.5rem;
+    height: 1.5rem;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #072651;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider-op {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 12rem;
+    top: 20rem;
+    z-index: 2;
+    bottom: 3px;
+    background-color: #fff;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked , .slider {
+    background-color: #072651;
+}
+
+input:checked + .slider-op {
+    transform: translateX(26px);
+}
+
+
+input:checked ~ body {
+    background-color: #333333;
+    color: #ffffff;
+}
+.ons{
+    border: 1px solid #846cdc;
+    border-radius: 5px;
+    width: 24rem;
+    height: 4rem;
+    margin-top: 1rem;
+}
+.ons input{
+    width: 3.5rem;
+    height: 1.5rem;
+    margin-top: 1rem;
+   color: #846cdc;
+}
+.ons div{
+    margin:  0 3rem 0 -1rem;
+    
+    width: 17rem;
+}
+.ons div span{
+    color: #abacb1;
+}
+#titel-ons{
+    color: #07295a;
+}
+.ons span{
+    margin: 0 1rem;
+    color: #846cdc;
+}
+
+#confirm{
+    width: 25rem;
+    height: 30rem;
+    flex-direction: column;
+}
+#confirm img{
+    width: 5rem;
+}
+#confirm p{
+        width: 24rem;
+    font-size: 15px;
+    margin-top: -.5rem;
+   text-align-last: center;
+}
+#main-summary{
+    background-color: #f8f9fe;
+    border-radius: 5px;
+    width: 24rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+
+    border-bottom: solid 1px #ccc;
+    
+}
+#summary-plan{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+#txt-s-p,#price-s-p{
+    margin:  0 .7rem;
+    color: #072651;
+    font-size: 14px;
+}
+#txt-s-p{
+    margin-top: -.7rem;
+}
+#change{
+    width: 22rem;
+    height: 1rem;
+    color: #9d9da8;
+    margin-left: 1rem;
+
+    font-size: 14px;
+    margin-top: -.5rem;
+    border-bottom: solid 1px black;
+    padding-bottom: .5rem;
+    border-radius: 2px;
+}
+#summary-ons{
+    
+    width: 22rem;
+    
+
+}
+.summary-ons,#total{
+    justify-content: space-between;
+    align-items: center;
+    width: 22rem;
+    height: 1.5rem;
+    margin-left: 1.2rem;
+
+}
+
+.txt-s-o,#txt-t{
+  color:  #9d9da8;
+  font-size: 14px;
+    
+}
+.price-s-o{
+    color: #2c3b55; 
+    font-size: 14px;
+}
+#total{
+    margin-top: 1rem;
+    font-size: 14px;
+}
+#total-amount{
+    color: #554dbb;
+    font-size: 18px;
+}
+
+
+
+@media (min-width :660px) and (max-width :990px){
+    
+    p{
+        font-size: 23px;
+    }
+    #main-sec{
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        width: 35rem;
+        height: 40rem;
+        border-radius: 14px;
+        position: relative;
+    }
+
+
+    #left-sec{
+        width: 31rem;
+        height: 10rem;
+        margin: 1rem;
+        background-image: url(./icons/bg-sidebar-mobile.svg);
+        flex-direction: row;
+    }
+    #step{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+    .right-art{
+        width: 27rem;
+        height: 20rem;
+       background-color: #fff;
+        margin: 1rem;
+        position: absolute;
+        left: 1rem;
+        top: 7rem;
+    }
+    .txt-step{
+        display: none;
+    }
+    .step{
+        width: 3.5rem;
+    }
+    form{
+        margin-left: 2rem;
+    
+    }
+    .txt{
+        margin-left: 2rem;
+    }
+    button{
+        right: -1rem;
+        bottom: -12.5rem;
+       
+    }
+    #main-plan,#main-ons{
+        margin-left: 2rem;
+    }
+    #select-plan{
+        display: flex;
+        flex-direction: column;
+        width: 30rem;
+        margin-left: -1rem;
+    }
+    .select-plan{
+        display: flex;
+        margin: .5rem;
+       width: 24rem;
+       height: 4rem;
+    }
+    .select-plan  img{
+        margin: .5rem;
+        width:  2.7rem;
+    }
+    .select-plan div{
+        margin-left: .5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #select-time{
+        width: 23rem;
+    }
+    .go-back{
+
+        bottom: -12.5rem;
+      
+    }
+}

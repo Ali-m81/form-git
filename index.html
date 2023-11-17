@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style.css">
+    <title>form hub</title>
+</head>
+<body>
+
+    <section id="main-sec">
+        <article id="left-sec">
+        <article id="step">
+            <div class="step" id="step-1">
+                <span class="number" id="num-step-1">1</span>
+                <div class="txt-step">
+                    <span class="one-txt">STEP 1</span>
+                    <span class="two-txt"> YOUR INFO</span>
+                </div>
+            </div>
+              
+            <div class="step" id="step-2">
+            <span class="number" id="num-step-2">2</span>
+                <div class="txt-step">
+                    <span class="one-txt">STEP 2</span>
+                    <span class="two-txt"> SELECT PLANE</span>
+                </div>
+            </div>
+
+            <div class="step" id="step-3">
+            <span class="number" id="num-step-3">3</span>
+                <div class="txt-step">
+                    <span class="one-txt">STEP 3</span>
+                    <span class="two-txt"> ADD-ONS</span>
+                </div>
+            </div>
+    
+            <div class="step" id="step-4">
+            <span class="number" id="num-step-4">4</span>
+                <div class="txt-step">
+                    <span class="one-txt">STEP 4</span>
+                    <span class="two-txt"> SUMMARY</span>
+                </div>
+            </div>
+        </article>
+        </article>
+
+
+        <article class="right-art">
+
+            <!-- artice for info -->
+                <article id="info">
+            <!-- from txt on the info page -->
+            <article class="txt">
+                <h1>personal info</h1>
+                <p>please provide your name, email address, and phone number.</p>
+            </article>
+            
+            <!-- art from form info -->
+            <article>
+                <form action="#" method="post" id="form-info">
+                    <label for="name">Name</label >
+                    <input type="text" name="name" placeholder="e.g Stepen king" id="name">
+                    <span id="span-name">the name fild can not have less than 4 characters</span>
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="e.g stephenking@gmail.com">
+                    <span id="span-mail">This Fild is required</span>
+                    <label for="phone-number">Phone Number</label>
+                    <input type="text" name="phone-number" placeholder="e.g +1 234 567 890" id="phone">
+                    <button type="button" id="info-button">Next Step</button>
+                </form>
+            </article>
+        </article>
+            <!-- article for select plan  -->
+        <article id="plan">
+            <article class="txt">
+                <h1>select your plan</h1>
+                <p>you have the option of monthly or yearly billing.</p>
+            </article>
+            
+            <!-- art for select plane -->
+            <article id="main-plan">
+                <span class="slider-op">
+                    
+                </span>
+                <section  id="select-plan">
+                <div class="select-plan" id="price1">
+                    <img src="./icons/icon-arcade.svg" alt="">
+                    <div>
+                        <span>Arcade</span>
+                        <span class="price">$9/mo</span>
+                        
+                    </div>
+                </div>
+
+                <div class="select-plan" id="price2">
+                    <img src="./icons/icon-advanced.svg" alt="">
+                    <div>
+                        <span>Advanced</span>
+                        <span class="price">$12/mo</span>
+                        
+                    </div>
+                </div>
+
+
+
+               
+                <div class="select-plan" id="price3">
+                    <img src="./icons/icon-pro.svg" alt="">
+                    <div>
+                        <span>Pro</span>
+                        <span class="price">$15/mo</span>
+                        
+                    </div>
+                </div>
+            </section>
+            
+            <span id="err-plan">
+                pls select plan
+            </span>
+
+            <section id="select-time">
+                <span>Monthly</span>
+            <label class="switch">
+                <input type="checkbox" id="period">
+                <span class="slider"></span>
+            </label>
+            <span>yearly</span>
+        </section>
+
+            </article>
+            <span id="go-back-2" class="go-back">Go Back</span>
+            <button type="button" id="plan-button">Next Step</button>
+        </article>
+
+
+         <!-- article for select add-ons  -->
+            <article id="add-ons">
+                <article class="txt">
+                    <h1>Pick add-ons</h1>
+                    <p>Add-ons help enhance yor gaming experience</p>
+                </article>
+                <!-- art for select ons -->
+                <article id="main-ons">
+                    <section id="select-ons">
+                        <article class="ons">
+                            <input type="checkbox" name="Online-server" id="Online">
+                            <div>
+                                <span id="titel-ons">Online service</span>
+                                <span>access to multiplayer games</span>
+                            </div>
+                            <span>$1/mo</span>
+                        </article>
+
+
+                        <article class="ons">
+                            <input type="checkbox" name="extra" id="extra">
+                            <div>
+                                <span id="titel-ons">Larger storage </span>
+                                <span>Extra 1TB of clud save</span>
+                            </div>
+                            <span>$2/mo</span>
+                        </article>
+
+                        <article class="ons">
+                            <input type="checkbox" name="castomize" id="castomize">
+                            <div>
+                                <span id="titel-ons">Customizable profile</span>
+                                <span>Custom theme on your profile</span>
+                            </div>
+                            <span>$2/mo</span>
+                        </article>
+                    </section>
+                </article>
+                <span id="go-back-3" class="go-back">Go Back</span>
+                <button type="button"id="ons-button">Next Step</button>
+            </article>
+
+            <!-- article for select sumary  -->
+            <article id="summary">
+                <article class="txt">
+                    <h1>Finishing Up</h1>
+                    <p>Double-click everythimg looks OK before confirirming</p>
+                </article>
+
+                <!-- article for summary -->
+                <article id="main-summary">
+                <section id="summary-plan">
+                    <span id="txt-s-p"></span>
+                    <span id="price-s-p"></span>
+                </section>
+                <span id="change">change</span>
+                <section id="summary-ons">
+                    <div class="summary-ons" id="s-o-1">
+                        <span class="txt-s-o">online service</span>
+                        <span class="price-s-o">$1/mo</span>
+                    </div>
+                    <div class="summary-ons" id="s-o-2">
+                        <span class="txt-s-o">Larger storage</span>
+                        <span class="price-s-o">$2/mo</span>
+                    </div>
+                    <div class="summary-ons" id="s-o-3">
+                        <span class="txt-s-o">Customizable profile</span>
+                        <span class="price-s-o">$2/mo</span>
+                    </div>
+                </section>
+                
+                </article>
+                <sectiom id="total">
+                    <span id="txt-t">Total</span>
+                    <span id="total-amount"></span>
+                </sectiom>
+                <span id="go-back-4" class="go-back">Go Back</span>
+                <button type="button" id="summary-button">confirm</button>
+            </article>
+
+
+             <!-- article for confrim -->
+             <article id="confirm">
+                <img src="./icons/icon-thank-you.svg" alt="confirm">
+                <h1>Thank you!</h1>
+                <p>thanks for confriming your subscription!we hope you have fun using our platform.if you ever need support,please fell free to email us at <span id="support-email">support@loremgaming.com</span></p>
+            </article>
+           
+    </article>
+</section>
+
+                </article>
+            </article>
+
+
+                
+
+            
+
+           
+
+<!-- <img src="./1694001649649.jpg" alt=""> -->
+
+
+
+
+
+    
+    
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
