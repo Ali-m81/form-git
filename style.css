@@ -2,32 +2,39 @@
     font-family: ub-bold;
     src: url(./fonts/Ubuntu-Bold.ttf);
 }
+
 @font-face {
     font-family: ub-medium;
     src: url(./fonts/Ubuntu-Medium.ttf);
 }
+
 @font-face {
     font-family: ub-regular;
     src: url(./fonts/Ubuntu-Regular.ttf);
 }
-span{
+
+span {
     font-size: 14px;
 }
-h1{
+
+h1 {
     font-size: 22px;
     color: #072651;
 }
-p{
+
+p {
     font-size: 14px;
     color: #abacb1;
     margin-top: -2rem;
     margin-bottom: 2rem;
 }
-.facke{
-    border:solid 2px #846cdc ;
-    background : #e3def1;
+
+.facke {
+    border: solid 2px #846cdc;
+    background: #e3def1;
 }
-body{
+
+body {
     background-color: #eef5ff;
     display: flex;
     justify-content: center;
@@ -35,41 +42,82 @@ body{
     margin-top: 4rem;
 
 }
-#main-sec,#summary-plan,#total,#main-sec,.summary-ons,.step,.ons{
+
+#main-sec,
+#summary-plan,
+#total,
+#main-sec,
+.summary-ons,
+.step,
+.ons {
     display: flex;
     flex-direction: row;
 }
-#left-sec,.right-art,.txt-step,#form-info,.select-plan div , .ons div , #main-summary,#summary-ons{
+
+#left-sec,
+.right-art,
+.txt-step,
+#form-info,
+.select-plan div,
+.ons div,
+#main-summary,
+#summary-ons {
     display: flex;
     flex-direction: column;
 }
-#left-sec,.ons{
+
+#left-sec,
+.ons {
     justify-content: center;
     align-items: center;
 }
 
-button ,input,.go-back , .select-plan , .slider , .ons ,.step, #main-summary , #change-step{
+button,
+input,
+.go-back,
+.select-plan,
+.slider,
+.ons,
+.step,
+#main-summary,
+#change-step {
     cursor: pointer;
 }
-input::placeholder,.number ,.select-plan div span{
-    font-family:ub-regular; 
+
+input::placeholder,
+.number,
+.select-plan div span {
+    font-family: ub-regular;
 }
-.number , #select-time, #confirm{
+
+.number,
+#select-time,
+#confirm {
     align-items: center;
     justify-content: center;
 
 }
-#plan , #add-ons , #summary , .summary-ons , #span-mail , #span-name , #err-plan, #confirm{
+
+#plan,
+#add-ons,
+#summary,
+.summary-ons,
+#span-mail,
+#span-name,
+#err-plan,
+#confirm {
     display: none;
 }
-#main-sec{
+
+#main-sec {
     background-color: #fff;
     width: 49rem;
     height: 37rem;
     border-radius: 14px;
-    
+
 }
-#left-sec{
+
+#left-sec {
     width: 17rem;
     height: 35rem;
     margin: 1rem;
@@ -77,7 +125,8 @@ input::placeholder,.number ,.select-plan div span{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.right-art{
+
+.right-art {
     position: relative;
     margin-left: 2rem !important;
     width: 24rem;
@@ -85,15 +134,18 @@ input::placeholder,.number ,.select-plan div span{
     margin: 1rem;
     margin-top: 2rem;
 }
-#step{
+
+#step {
     margin-top: -12rem;
 }
-.step{
+
+.step {
     width: 14rem;
     height: 2rem;
     margin-bottom: 2rem;
 }
-.number{
+
+.number {
     border: none;
     border-radius: 50%;
     padding: .5rem;
@@ -101,29 +153,34 @@ input::placeholder,.number ,.select-plan div span{
     border: solid 1px #bde1fc;
     display: flex;
 }
-.one-txt{
+
+.one-txt {
     color: #8e8bfa;
 }
-.two-txt{
-    font-family:ub-regular ;
+
+.two-txt {
+    font-family: ub-regular;
     color: #fff;
 }
 
-input{
+input {
     width: 22rem;
     height: 2rem;
     border-radius: 5px;
     border: solid .1px #abacb1;
     margin-bottom: 1rem;
 }
-input::placeholder{
-    color:#a2a2aa ;
-    
+
+input::placeholder {
+    color: #a2a2aa;
+
 }
-label{
+
+label {
     color: #072651;
 }
-button{
+
+button {
     width: 6rem;
     height: 2rem;
     color: #fff;
@@ -134,16 +191,21 @@ button{
     right: -1rem;
     bottom: 2rem;
 }
-.go-back{
-    color:#abacb1 ;
+
+.go-back {
+    color: #abacb1;
     position: absolute;
     left: -1rem;
     bottom: 2.5rem;
 }
-.go-back:hover{
-    color:#072651 ;
+
+.go-back:hover {
+    color: #072651;
 }
-#span-mail,#span-name,#err-plan{
+
+#span-mail,
+#span-name,
+#err-plan {
     width: 20rem;
     margin-top: -.8rem;
     margin-bottom: 1rem;
@@ -151,48 +213,58 @@ button{
     color: red;
     margin-left: 15rem;
 }
-#err-plan{
+
+#err-plan {
     margin-left: 19rem;
     margin-top: 0;
 }
 
-#plan{
+#plan {
     margin-top: 1rem;
 }
-#select-plan{
+
+#select-plan {
     display: flex;
     width: 30rem;
     margin-left: -1rem;
 }
-.select-plan{
+
+.select-plan {
     margin: .5rem;
-    border: solid 1px #9590a8 ;
+    border: solid 1px #9590a8;
     border-radius: 5px;
-   width: 8rem;
-   height: 9rem;
+    width: 8rem;
+    height: 9rem;
 
 }
-.select-plan:hover,.ons:hover{
+
+.select-plan:hover,
+.ons:hover {
     border: 2px solid #846cdc;
     background-color: #e3def1;
 }
-.select-plan div{
+
+.select-plan div {
     margin-left: .5rem;
-    
+
 }
-.select-plan div span{
+
+.select-plan div span {
     color: #07295a;
 }
-.price{
+
+.price {
     font-size: 14px;
     color: #a4a6ab !important;
 }
-.select-plan  img{
+
+.select-plan img {
     margin: .5rem;
     margin-bottom: 2.5rem;
-    width:  2.7rem;
+    width: 2.7rem;
 }
-#select-time{
+
+#select-time {
     margin-top: 1rem;
     width: 26rem;
     height: 2.5rem;
@@ -240,63 +312,73 @@ button{
     border-radius: 50%;
 }
 
-input:checked , .slider {
+input:checked,
+.slider {
     background-color: #072651;
 }
 
-input:checked + .slider-op {
+input:checked+.slider-op {
     transform: translateX(26px);
 }
 
 
-input:checked ~ body {
+input:checked~body {
     background-color: #333333;
     color: #ffffff;
 }
-.ons{
+
+.ons {
     border: 1px solid #846cdc;
     border-radius: 5px;
     width: 24rem;
     height: 4rem;
     margin-top: 1rem;
 }
-.ons input{
+
+.ons input {
     width: 3.5rem;
     height: 1.5rem;
     margin-top: 1rem;
-   color: #846cdc;
+    color: #846cdc;
 }
-.ons div{
-    margin:  0 3rem 0 -1rem;
-    
+
+.ons div {
+    margin: 0 3rem 0 -1rem;
+
     width: 17rem;
 }
-.ons div span{
+
+.ons div span {
     color: #abacb1;
 }
-#titel-ons{
+
+#titel-ons {
     color: #07295a;
 }
-.ons span{
+
+.ons span {
     margin: 0 1rem;
     color: #846cdc;
 }
 
-#confirm{
+#confirm {
     width: 25rem;
     height: 30rem;
     flex-direction: column;
 }
-#confirm img{
+
+#confirm img {
     width: 5rem;
 }
-#confirm p{
-        width: 24rem;
+
+#confirm p {
+    width: 24rem;
     font-size: 15px;
     margin-top: -.5rem;
-   text-align-last: center;
+    text-align-last: center;
 }
-#main-summary{
+
+#main-summary {
     background-color: #f8f9fe;
     border-radius: 5px;
     width: 24rem;
@@ -304,22 +386,27 @@ input:checked ~ body {
     padding-bottom: 1rem;
 
     border-bottom: solid 1px #ccc;
-    
+
 }
-#summary-plan{
+
+#summary-plan {
     justify-content: space-between;
     align-items: center;
     margin-top: 1.5rem;
 }
-#txt-s-p,#price-s-p{
-    margin:  0 .7rem;
+
+#txt-s-p,
+#price-s-p {
+    margin: 0 .7rem;
     color: #072651;
     font-size: 14px;
 }
-#txt-s-p{
+
+#txt-s-p {
     margin-top: -.7rem;
 }
-#change{
+
+#change {
     width: 22rem;
     height: 1rem;
     color: #9d9da8;
@@ -331,13 +418,16 @@ input:checked ~ body {
     padding-bottom: .5rem;
     border-radius: 2px;
 }
-#summary-ons{
-    
+
+#summary-ons {
+
     width: 22rem;
-    
+
 
 }
-.summary-ons,#total{
+
+.summary-ons,
+#total {
     justify-content: space-between;
     align-items: center;
     width: 22rem;
@@ -346,32 +436,37 @@ input:checked ~ body {
 
 }
 
-.txt-s-o,#txt-t{
-  color:  #9d9da8;
-  font-size: 14px;
-    
+.txt-s-o,
+#txt-t {
+    color: #9d9da8;
+    font-size: 14px;
+
 }
-.price-s-o{
-    color: #2c3b55; 
+
+.price-s-o {
+    color: #2c3b55;
     font-size: 14px;
 }
-#total{
+
+#total {
     margin-top: 1rem;
     font-size: 14px;
 }
-#total-amount{
+
+#total-amount {
     color: #554dbb;
     font-size: 18px;
 }
 
 
 
-@media (min-width :660px) and (max-width :990px){
-    
-    p{
+@media (min-width :660px) and (max-width :990px) {
+
+    p {
         font-size: 23px;
     }
-    #main-sec{
+
+    #main-sec {
         display: flex;
         flex-direction: column;
         background-color: #fff;
@@ -382,65 +477,78 @@ input:checked ~ body {
     }
 
 
-    #left-sec{
+    #left-sec {
         width: 31rem;
         height: 10rem;
         margin: 1rem;
         background-image: url(./icons/bg-sidebar-mobile.svg);
         flex-direction: row;
     }
-    #step{
+
+    #step {
         display: flex;
         flex-direction: row;
         margin: 0;
     }
-    .right-art{
+
+    .right-art {
         width: 27rem;
         height: 20rem;
-       background-color: #fff;
+        background-color: #fff;
         margin: 1rem;
         position: absolute;
         left: 1rem;
         top: 7rem;
     }
-    .txt-step{
+
+    .txt-step {
         display: none;
     }
-    .step{
+
+    .step {
         width: 3.5rem;
     }
-    form{
+
+    form {
         margin-left: 2rem;
-    
+
     }
-    .txt{
+
+    .txt {
         margin-left: 2rem;
     }
-    button{
+
+    button {
         right: -1rem;
         bottom: -12.5rem;
-       
+
     }
-    #main-plan,#main-ons{
+
+    #main-plan,
+    #main-ons {
         margin-left: 2rem;
     }
-    #select-plan{
+
+    #select-plan {
         display: flex;
         flex-direction: column;
         width: 30rem;
         margin-left: -1rem;
     }
-    .select-plan{
+
+    .select-plan {
         display: flex;
         margin: .5rem;
-       width: 24rem;
-       height: 4rem;
+        width: 24rem;
+        height: 4rem;
     }
-    .select-plan  img{
+
+    .select-plan img {
         margin: .5rem;
-        width:  2.7rem;
+        width: 2.7rem;
     }
-    .select-plan div{
+
+    .select-plan div {
         margin-left: .5rem;
         display: flex;
         flex-direction: column;
@@ -448,12 +556,180 @@ input:checked ~ body {
         align-items: center;
 
     }
-    #select-time{
+
+    #select-time {
         width: 23rem;
     }
-    .go-back{
+
+    .go-back {
 
         bottom: -12.5rem;
-      
+
+    }
+}
+
+@media (min-width :360px) and (max-width :660px) {
+
+
+    p {
+        font-size: 23px;
+    }
+
+    #main-sec {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        width: 23rem;
+        height: 40rem;
+        border-radius: 14px;
+        position: relative;
+    }
+
+    input {
+        width: 14rem;
+        height: 2rem;
+        border-radius: 5px;
+        border: solid .1px #abacb1;
+        margin-bottom: 1rem;
+    }
+
+    #left-sec {
+        width: 21rem;
+        height: 10rem;
+        margin: 1rem;
+        background-image: url(./icons/bg-sidebar-mobile.svg);
+        flex-direction: row;
+    }
+
+    #step {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .right-art {
+        width: 19rem;
+        height: 20rem;
+        background-color: #fff;
+        margin: 1rem;
+        position: absolute;
+        left: 0rem;
+        top: 7rem;
+    }
+
+    .txt-step {
+        display: none;
+    }
+
+    .step {
+        width: 3.5rem;
+    }
+
+    form {
+        margin-left: 2rem;
+
+    }
+
+    .txt {
+        margin-left: 2rem;
+    }
+
+    button {
+        right: -1rem;
+        bottom: -12.5rem;
+
+    }
+
+    #main-plan,
+    #main-ons {
+        margin-left: 2rem;
+    }
+
+    #select-plan {
+        display: flex;
+        flex-direction: column;
+        width: 17rem;
+        margin-left: -1rem;
+    }
+
+    .select-plan {
+        display: flex;
+        margin: .5rem;
+        width: 17rem;
+        height: 4rem;
+    }
+
+    .select-plan img {
+        margin: .5rem;
+        width: 2.7rem;
+    }
+
+
+
+    #select-time {
+        width: 15rem;
+    }
+
+    .go-back {
+
+        bottom: -12.5rem;
+
+    }
+
+    p {
+        font-size: 12px;
+        width: 10rem;
+    }
+
+    #main-summary {
+        width: 18rem;
+
+    }
+
+    #change {
+        width: 15rem;
+
+    }
+
+    .summary-ons,
+    #total {
+        width: 14rem;
+
+    }
+
+    .ons div span {
+        width: 9rem;
+        margin-right: -3rem;
+    }
+
+    .ons {
+        width: 16rem;
+    }
+
+    #confirm {
+        width: 19rem;
+    }
+
+    #confirm p {
+        width: 17rem;
+    }
+
+    #span-mail,
+    #span-name,
+    #err-plan {
+        width: 13rem;
+        margin-top: -.8rem;
+        margin-bottom: 1rem;
+        font-size: 13px;
+        color: red;
+        margin-left: 0rem;
+    }
+
+    #err-plan {
+        margin-top: 0.2rem;
+    }
+
+    .select-plan div {
+        justify-content: center;
     }
 }
