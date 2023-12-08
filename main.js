@@ -1,22 +1,22 @@
-  /////////////// left sec scripts cod///////////////
-   let step1 = document.querySelector('#step-1')
-   let step2 = document.querySelector('#step-2')
-   let step3 = document.querySelector('#step-3')
-   let step4 = document.querySelector('#step-4')
-   
-   let num_step_1 = document.querySelector('#num-step-1')
-   let num_step_2 = document.querySelector('#num-step-2')
-   let num_step_3 = document.querySelector('#num-step-3')
-   let num_step_4 = document.querySelector('#num-step-4')
-   
-   let info = document.querySelector('#info')
-   let plan = document.querySelector('#plan')
-   let AddOns = document.querySelector('#add-ons')
-   let summary = document.querySelector('#summary')
+/////////////// left sec scripts cod///////////////
+let step1 = document.querySelector('#step-1')
+let step2 = document.querySelector('#step-2')
+let step3 = document.querySelector('#step-3')
+let step4 = document.querySelector('#step-4')
 
-   num_step_1.style.background = '#bde1fc'
+let num_step_1 = document.querySelector('#num-step-1')
+let num_step_2 = document.querySelector('#num-step-2')
+let num_step_3 = document.querySelector('#num-step-3')
+let num_step_4 = document.querySelector('#num-step-4')
 
-   step1.addEventListener('click' , ()=>{
+let info = document.querySelector('#info')
+let plan = document.querySelector('#plan')
+let AddOns = document.querySelector('#add-ons')
+let summary = document.querySelector('#summary')
+
+num_step_1.style.background = '#bde1fc'
+
+step1.addEventListener('click', () => {
     info.style.display = 'block'
     plan.style.display = 'none'
     AddOns.style.display = 'none'
@@ -25,9 +25,9 @@
     num_step_2.style.background = ''
     num_step_3.style.background = ''
     num_step_4.style.background = ''
-   })
+})
 
-   step2.addEventListener('click' , ()=>{
+step2.addEventListener('click', () => {
     info.style.display = 'none'
     plan.style.display = 'block'
     AddOns.style.display = 'none'
@@ -36,9 +36,9 @@
     num_step_2.style.background = '#bde1fc'
     num_step_3.style.background = ''
     num_step_4.style.background = ''
-   })
+})
 
-   step3.addEventListener('click' , ()=>{
+step3.addEventListener('click', () => {
     info.style.display = 'none'
     plan.style.display = 'none'
     AddOns.style.display = 'block'
@@ -47,9 +47,9 @@
     num_step_2.style.background = ''
     num_step_3.style.background = '#bde1fc'
     num_step_4.style.background = ''
-   })
-   
-   step4.addEventListener('click' , ()=>{
+})
+
+step4.addEventListener('click', () => {
     info.style.display = 'none'
     plan.style.display = 'none'
     AddOns.style.display = 'none'
@@ -58,15 +58,15 @@
     num_step_2.style.background = ''
     num_step_3.style.background = ''
     num_step_4.style.background = '#bde1fc'
-   })
+})
 
-   /////////////// // info scrips code start/////////////
+/////////////// // info scrips code start/////////////
 
 
 
 let namee = document.querySelector('#name')
-let email= document.querySelector('#email')
-let phone= document.querySelector('#phone')
+let email = document.querySelector('#email')
+let phone = document.querySelector('#phone')
 
 
 let step_1 = document.querySelector('#step-1')
@@ -86,48 +86,54 @@ let emailpat = /@gmail/;
 
 
 
-namee.addEventListener('input' , ()=>{
+namee.addEventListener('input', () => {
     let valuename = namee.value.length;
-    if(valuename<4){
+    if (valuename < 4) {
         span_name.style.display = 'block'
-        span_name.style.margin = '-.8rem 0 1rem 4rem'
+        if (Window.innerWidth > 1080) {
+            span_name.style.margin = '-.8rem 0 1rem 4rem'
+        }
+        span_name.style.margin = '-.8rem 0 1rem 0rem'
     }
-    else if(valuename>4){
+    else if (valuename > 4) {
         span_name.style.display = 'none'
     }
 })
 
-email.addEventListener('input' , ()=>{
-    
+email.addEventListener('input', () => {
+
     let valuename = email.value.length;
-    if(!emailpat.test(email.value)){
+    if (!emailpat.test(email.value)) {
         span_email.style.display = 'block'
     }
-    else if(valuename>4){
+    else if (valuename > 4) {
         span_email.style.display = 'none'
     }
 })
 
-InfoButton.addEventListener('click' , ()=>{
-    if(namee.value.length<4&&!emailpat.test(email.value)){
+InfoButton.addEventListener('click', () => {
+    if (namee.value.length < 4 && !emailpat.test(email.value)) {
         span_name.style.display = 'block'
-        span_name.style.margin = '-.8rem 0 1rem 4rem'
+        if (Window.innerWidth > 1080) {
+            span_name.style.margin = '-.8rem 0 1rem 4rem'
+        }
+        span_name.style.margin = '-.8rem 0 1rem 0rem'
         span_email.style.display = 'block'
 
-    }else{
+    } else {
         info.style.display = 'none'
         plan.style.display = 'block'
         num_step_1.style.background = ''
         num_step_2.style.background = '#bde1fc'
-        
+
     }
-    
+
 })
 
 /////////////////////info scripts code end/////////////
 
 ////////////////////plan scripts code start////////////
-let total=0;
+let total = 0;
 let PricePlan = 0;
 let YourPlan;
 let PeriodTime;
@@ -147,75 +153,75 @@ let ErrPlan = document.querySelector('#err-plan')
 
 
 
-SelectPlan.forEach((e)=>{
-    e.addEventListener('click' ,()=>{
-    SelectPlan.forEach((e)=>{
-        if(e.classList.length==2){
-            e.classList.remove('facke')
-        }
-    })
-    e.classList.add('facke')
-    
+SelectPlan.forEach((e) => {
+    e.addEventListener('click', () => {
+        SelectPlan.forEach((e) => {
+            if (e.classList.length == 2) {
+                e.classList.remove('facke')
+            }
+        })
+        e.classList.add('facke')
+
     })
 })
-price1.addEventListener('click' ,()=>{
+price1.addEventListener('click', () => {
 
     slidbar.style.left = '12rem'
-    period.value='on'
+    period.value = 'on'
     PricePlan = 9;
     YourPlan = 'Acarde'
     PeriodTime = 'Monthly'
 
-   
+
 
 })
-price2.addEventListener('click' ,()=>{
+price2.addEventListener('click', () => {
     slidbar.style.left = '12rem'
-    period.value='on'
+    period.value = 'on'
     PricePlan = 12;
     YourPlan = 'Advanced'
     PeriodTime = 'Monthly'
 
-  
+
 
 })
-price3.addEventListener('click' ,()=>{
+price3.addEventListener('click', () => {
     slidbar.style.left = '12rem'
-    period.value='on'
+    period.value = 'on'
     PricePlan = 15;
     YourPlan = 'pro'
     PeriodTime = 'Monthly'
 
-    
-    
+
+
 })
-period.addEventListener('change' ,()=>{
-    if(period.value=='on'){
+period.addEventListener('change', () => {
+    if (period.value == 'on') {
         slidbar.style.left = '13.7rem'
-      PricePlan*=12;
-        period.value= 'off'
+        PricePlan *= 12;
+        period.value = 'off'
         PeriodTime = 'Yearly'
-        
-    }else{
+
+    } else {
         slidbar.style.left = '12rem'
-      PricePlan/=12
-        period.value='on'
+        PricePlan /= 12
+        period.value = 'on'
         PeriodTime = 'Monthly'
     }
-    
+
 })
-PlanButton.addEventListener('click' , ()=>{
+PlanButton.addEventListener('click', () => {
     console.log(PricePlan)
-    if(PricePlan==0){
+    if (PricePlan == 0) {
         ErrPlan.style.display = 'block'
-    }else{
+    } else {
         num_step_2.style.background = ''
         num_step_3.style.background = '#bde1fc'
         plan.style.display = 'none'
         AddOns.style.display = 'block'
-       
+
     }
-   
+
 })
 /////////////////////plan scripts code end/////////////
 
@@ -225,7 +231,7 @@ PlanButton.addEventListener('click' , ()=>{
 let online = document.querySelector('#Online')
 let extra = document.querySelector('#extra')
 let castomize = document.querySelector('#castomize')
-let OnsButton  =document.querySelector('#ons-button')
+let OnsButton = document.querySelector('#ons-button')
 // varibales of the summary
 let SummaryOns1 = document.querySelector('#s-o-1')
 let SummaryOns2 = document.querySelector('#s-o-2')
@@ -234,54 +240,54 @@ let SummaryOns3 = document.querySelector('#s-o-3')
 
 
 
-online.addEventListener('change' ,()=>{
+online.addEventListener('change', () => {
 
-    if(online.value=='on'){
-        total+=1;
-        online.value= 'off'
-        SummaryOns1.style.display='flex'
+    if (online.value == 'on') {
+        total += 1;
+        online.value = 'off'
+        SummaryOns1.style.display = 'flex'
 
-    }else{
-        total-=1
-        extra.value='on'
-        SummaryOns1.style.display='none'
+    } else {
+        total -= 1
+        extra.value = 'on'
+        SummaryOns1.style.display = 'none'
     }
-    
+
 })
 
 
 
-extra.addEventListener('change' ,()=>{
-    if(extra.value=='on'){
-        total+=2;
-        extra.value= 'off'
-        SummaryOns2.style.display='flex'
-    }else{
-        total-=2
-        extra.value='on'
-        SummaryOns2.style.display='none'
+extra.addEventListener('change', () => {
+    if (extra.value == 'on') {
+        total += 2;
+        extra.value = 'off'
+        SummaryOns2.style.display = 'flex'
+    } else {
+        total -= 2
+        extra.value = 'on'
+        SummaryOns2.style.display = 'none'
     }
-    
+
 })
 
 
-castomize.addEventListener('change' ,()=>{
-    if(castomize.value=='on'){
-        total+=2;
-        castomize.value= 'off'
-        SummaryOns3.style.display='flex'
-    }else{
-        total-=2
-        castomize.value='on'
-        SummaryOns3.style.display='none'
+castomize.addEventListener('change', () => {
+    if (castomize.value == 'on') {
+        total += 2;
+        castomize.value = 'off'
+        SummaryOns3.style.display = 'flex'
+    } else {
+        total -= 2
+        castomize.value = 'on'
+        SummaryOns3.style.display = 'none'
     }
-    
+
 })
 
-OnsButton.addEventListener('click' , ()=>{
+OnsButton.addEventListener('click', () => {
     TxtSummaryPlan.innerHTML = `${YourPlan}(${PeriodTime})`
     PriceSummaryPlan.innerHTML = `+$${PricePlan}/mo`
-    TotalAmount.innerHTML = `+$${total+PricePlan}/mo`
+    TotalAmount.innerHTML = `+$${total + PricePlan}/mo`
     AddOns.style.display = 'none'
     summary.style.display = 'block'
     num_step_3.style.background = ''
@@ -291,12 +297,12 @@ OnsButton.addEventListener('click' , ()=>{
 
 ////////////////////sommary scripts code start////////////
 let TotalAmount = document.querySelector('#total-amount')
-let TxtSummaryPlan  = document.querySelector('#txt-s-p')
+let TxtSummaryPlan = document.querySelector('#txt-s-p')
 let PriceSummaryPlan = document.querySelector('#price-s-p')
 let Confirm = document.querySelector('#confirm')
 let ConfirmButton = document.querySelector('#summary-button')
 
-ConfirmButton.addEventListener('click' , ()=>{
+ConfirmButton.addEventListener('click', () => {
     summary.style.display = 'none'
     Confirm.style.display = 'flex'
 })
@@ -306,20 +312,20 @@ let GoBack1 = document.querySelector('#go-back-2')
 let GoBack2 = document.querySelector('#go-back-3')
 let GoBack3 = document.querySelector('#go-back-4')
 
-GoBack1.addEventListener('click' , ()=>{
+GoBack1.addEventListener('click', () => {
     console.log('ali')
     plan.style.display = 'none'
     info.style.display = 'block'
     num_step_2.style.background = ''
     num_step_1.style.background = '#bde1fc'
 })
-GoBack2.addEventListener('click' , ()=>{
+GoBack2.addEventListener('click', () => {
     AddOns.style.display = 'none'
     plan.style.display = 'block'
     num_step_3.style.background = ''
     num_step_2.style.background = '#bde1fc'
 })
-GoBack3.addEventListener('click' , ()=>{
+GoBack3.addEventListener('click', () => {
     summary.style.display = 'none'
     AddOns.style.display = 'block'
     num_step_4.style.background = ''
